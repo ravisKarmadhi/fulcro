@@ -1,0 +1,105 @@
+input {
+    height: 58px;
+    margin-bottom: 12px;
+    @include media-breakpoint-down(md) {
+        &:first-child{
+            margin-top: 0 !important;
+        }
+    }
+}
+
+textarea,
+input {
+    border-radius: $radiusXM;
+    border: 1px solid $primary;
+    color: $primary;
+    padding-left: 33px;
+    padding-right: 33px;
+
+    @include media-breakpoint-down(md) {
+        margin-top: 9px !important;
+    }
+
+    &::placeholder {
+        color: $primary;
+        font-size: $fontM;
+        font-family: "articulat-cf" !important;
+        font-weight: 400;
+    }
+}
+
+.select2-container {
+    width: 100% !important;
+
+    .select2-selection--single[aria-expanded="true"] {
+        border-radius: $radiusXM $radiusXM 0 0;
+        background-color: transparent !important;
+        border: 1px solid $primary;
+        border-bottom: 0 !important;
+
+        .select2-selection__arrow {
+            transform: rotate(180deg);
+        }
+    }
+
+    .select2-selection--single {
+        height: 58px !important;
+        border-radius: $radiusXM;
+        border: 1px solid $primary;
+        background: transparent;
+
+        .select2-selection__rendered {
+            padding: 0 33px;
+            font-weight: 400;
+            font-size: $fontM;
+            color: $primary;
+            text-align: start;
+            height: 58px !important;
+            line-height: 58px !important;
+            font-family: "articulat-cf";
+
+            .select2-selection__placeholder {
+                font-family: "articulat-cf";
+                font-weight: 400;
+                font-size: $fontM;
+                color: $primary;
+            }
+        }
+
+        .select2-selection__arrow {
+            height: 100%;
+            top: 0;
+            right: 16px;
+            width: 30px;
+            background-image: url('../images/svg/drop-down-class.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition: all 0.3s ease-in-out;
+
+            b {
+                display: none !important;
+            }
+        }
+    }
+}
+
+.categories-select2 {
+    background-color: $secondary !important;
+    border: 1px solid $primary;
+    border-radius: 0 0 $radiusXM $radiusXM;
+    overflow: hidden;
+
+    ul {
+        li {
+            padding: 10px 33px !important;
+            font-family: "articulat-cf";
+            font-weight: 400;
+            font-size: $fontM;
+        }
+    }
+    .select2-results__option--highlighted {
+        background-color: $primary !important;
+        color: $white !important;
+
+    }
+}

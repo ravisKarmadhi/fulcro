@@ -1,7 +1,8 @@
 @import "common/_variables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 // Select2
-@import "../../node_modules/select2/dist/css/select2.min.css";
+@import '../../node_modules/select2/src/scss/core.scss';
+@import '../../node_modules/select2/dist/css/select2.min.css';
 // Slick
 @import "../../node_modules/slick-carousel/slick/slick.scss";
 @import "../../node_modules/slick-carousel/slick/slick-theme.scss";
@@ -40,6 +41,9 @@ $grid-breakpoints: (
 // pages css
 @import "pages/_home";
 @import "pages/_project";
+@import "pages/_privacy";
+@import "pages/_contact";
+@import "pages/_singlenews";
 // parts css
 @import "parts/_service_card.scss";
 @import "parts/_news_card.scss";

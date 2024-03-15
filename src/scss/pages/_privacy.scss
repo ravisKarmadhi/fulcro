@@ -1,0 +1,46 @@
+.privacy-page {
+    .privacy-left-content {
+        .privacy-links {
+            top: 242px;
+
+            li {
+                &:last-child {
+                    margin-bottom: 0 !important;
+                }
+            }
+
+            a {
+                color: rgba($color: $white, $alpha: 0.5) !important;
+            }
+
+            .active {
+                a {
+                    color: rgba($color: $white, $alpha: 1.0) !important;
+                    font-size: $fontL;
+                }
+
+                border-left: 1px solid $white;
+                padding-left: 12px;
+            }
+        }
+    }
+
+    .privacy-right-content {
+        .single-content {
+            &:first-child {
+                padding-top: 242px;
+            }
+
+            padding-top: 100px;
+
+            @include media-breakpoint-down(lg) {
+                padding-top: 105px !important;
+            }
+            div{
+                &:last-child{
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+    }
+}

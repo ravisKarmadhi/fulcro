@@ -9,6 +9,8 @@ import { Plugins } from './parts/plugins.js'
 import { Parts } from './parts/parts.js'
 import { Filter } from './parts/filter.js'
 import { Project } from './parts/project.js'
+import { Privacy } from './parts/privacy.js';
+import { Select } from './parts/select.js';
 
 
 // export for others scripts to use
@@ -40,6 +42,11 @@ $(function () {
 
   window.project = new Project();
   window.project.init();
+  window.privacy = new Privacy();
+  window.privacy.init();
+
+  window.select = new Select();
+  window.select.init();
 });
 
 // ===========================================================================
