@@ -11,6 +11,11 @@ button,
     height: 51px;
     line-height: 51px;
 
+    @include media-breakpoint-down(lg) {
+        height: 30px !important;
+        line-height: 30px !important;
+    }
+
     &.transparent-btn {
         background-color: transparent !important;
 

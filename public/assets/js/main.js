@@ -20476,7 +20476,69 @@ var Parts = /*#__PURE__*/function () {
   }]);
   return Parts;
 }();
+;// CONCATENATED MODULE: ./src/js/parts/privacy.js
+function privacy_typeof(obj) { "@babel/helpers - typeof"; return privacy_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, privacy_typeof(obj); }
+function privacy_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function privacy_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, privacy_toPropertyKey(descriptor.key), descriptor); } }
+function privacy_createClass(Constructor, protoProps, staticProps) { if (protoProps) privacy_defineProperties(Constructor.prototype, protoProps); if (staticProps) privacy_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function privacy_toPropertyKey(arg) { var key = privacy_toPrimitive(arg, "string"); return privacy_typeof(key) === "symbol" ? key : String(key); }
+function privacy_toPrimitive(input, hint) { if (privacy_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (privacy_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var Privacy = /*#__PURE__*/function () {
+  function Privacy() {
+    privacy_classCallCheck(this, Privacy);
+  }
+  privacy_createClass(Privacy, [{
+    key: "init",
+    value: function init() {
+      $(document).ready(function () {
+        var links = $("#privacy-links a");
+        links.first().parent().addClass("active");
+        $(window).scroll(function () {
+          var fromTop = $(this).scrollTop();
+          links.each(function () {
+            var section = $($(this).attr("href"));
+            if (section.position().top <= fromTop && section.position().top + section.outerHeight() > fromTop) {
+              links.each(function () {
+                $(this).parent().removeClass("active");
+              });
+              $(this).parent().addClass("active");
+            }
+          });
+        });
+      });
+    }
+  }]);
+  return Privacy;
+}();
+;// CONCATENATED MODULE: ./src/js/parts/select.js
+function select_typeof(obj) { "@babel/helpers - typeof"; return select_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, select_typeof(obj); }
+function select_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function select_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, select_toPropertyKey(descriptor.key), descriptor); } }
+function select_createClass(Constructor, protoProps, staticProps) { if (protoProps) select_defineProperties(Constructor.prototype, protoProps); if (staticProps) select_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function select_toPropertyKey(arg) { var key = select_toPrimitive(arg, "string"); return select_typeof(key) === "symbol" ? key : String(key); }
+function select_toPrimitive(input, hint) { if (select_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (select_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var Select = /*#__PURE__*/function () {
+  function Select() {
+    select_classCallCheck(this, Select);
+  }
+  select_createClass(Select, [{
+    key: "init",
+    value: function init() {
+      $(document).ready(function () {
+        $(".js-select2").select2({
+          closeOnSelect: true,
+          minimumResultsForSearch: Infinity,
+          allowClear: false,
+          dropdownCssClass: "categories-select2"
+        });
+      });
+    }
+  }]);
+  return Select;
+}();
 ;// CONCATENATED MODULE: ./src/js/main.js
+
+
 
 
 
@@ -20503,6 +20565,10 @@ jquery_default()(function () {
   window.plugins.init();
   window.parts = new Parts();
   window.parts.init();
+  window.privacy = new Privacy();
+  window.privacy.init();
+  window.select = new Select();
+  window.select.init();
 });
 
 // ===========================================================================

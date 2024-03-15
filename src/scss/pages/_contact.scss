@@ -1,0 +1,20 @@
+.map-section {
+    .map-img {
+        height: 415px;
+    }
+    div{
+        &:last-child{
+            margin-bottom: 0 !important;
+        }
+    }
+}
+
+.contact-form {
+    .input-row>* {
+        padding: 0 3px !important;
+    }
+
+    .input-row {
+        margin: 0 -3px;
+    }
+}

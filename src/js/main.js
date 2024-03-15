@@ -7,6 +7,8 @@ import 'select2/dist/js/select2.min.js';
 import { App } from './parts/app.js'
 import { Plugins } from './parts/plugins.js'
 import { Parts } from './parts/parts.js'
+import { Privacy } from './parts/privacy.js';
+import { Select } from './parts/select.js';
 
 
 // export for others scripts to use
@@ -32,6 +34,12 @@ $(function () {
 
   window.parts = new Parts();
   window.parts.init();
+
+  window.privacy = new Privacy();
+  window.privacy.init();
+
+  window.select = new Select();
+  window.select.init();
 });
 
 // ===========================================================================
