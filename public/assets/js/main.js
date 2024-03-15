@@ -20451,6 +20451,37 @@ var Plugins = /*#__PURE__*/function () {
         slidesToShow: 5,
         slidesToScroll: 1
       });
+      $(".capabilities-slider").slick({
+        dots: false,
+        infinite: true,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '.capablities-slider-btn .slick--prev',
+        nextArrow: '.capablities-slider-btn .slick--next'
+      });
+      $(".slider-testimonial").slick({
+        dots: true,
+        infinite: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+      $(".single-project-slider").slick({
+        dots: true,
+        infinite: true,
+        arrows: true,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '.single-project-btn .slick--prev',
+        nextArrow: '.single-project-btn .slick--next'
+      });
     }
   }, {
     key: "slickSLider",
@@ -20476,7 +20507,74 @@ var Parts = /*#__PURE__*/function () {
   }]);
   return Parts;
 }();
+;// CONCATENATED MODULE: ./src/js/parts/filter.js
+function filter_typeof(obj) { "@babel/helpers - typeof"; return filter_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, filter_typeof(obj); }
+function filter_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function filter_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, filter_toPropertyKey(descriptor.key), descriptor); } }
+function filter_createClass(Constructor, protoProps, staticProps) { if (protoProps) filter_defineProperties(Constructor.prototype, protoProps); if (staticProps) filter_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function filter_toPropertyKey(arg) { var key = filter_toPrimitive(arg, "string"); return filter_typeof(key) === "symbol" ? key : String(key); }
+function filter_toPrimitive(input, hint) { if (filter_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (filter_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var Filter = /*#__PURE__*/function () {
+  function Filter() {
+    filter_classCallCheck(this, Filter);
+  }
+  filter_createClass(Filter, [{
+    key: "init",
+    value: function init() {
+      $(document).ready(function () {
+        $(".filter-button").click(function () {
+          var value = $(this).attr('data-filter');
+          if (value == "all") {
+            $('.filter').show('500');
+          } else {
+            $(".filter").not('.' + value).hide('1000');
+            $('.filter').filter('.' + value).show('1000');
+          }
+        });
+        // color toggle
+        $(".filter-button").click(function () {
+          $(this).toggleClass("highlight").siblings().removeClass("highlight");
+        });
+      });
+    }
+  }]);
+  return Filter;
+}();
+;// CONCATENATED MODULE: ./src/js/parts/project.js
+function project_typeof(obj) { "@babel/helpers - typeof"; return project_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, project_typeof(obj); }
+function project_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function project_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, project_toPropertyKey(descriptor.key), descriptor); } }
+function project_createClass(Constructor, protoProps, staticProps) { if (protoProps) project_defineProperties(Constructor.prototype, protoProps); if (staticProps) project_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function project_toPropertyKey(arg) { var key = project_toPrimitive(arg, "string"); return project_typeof(key) === "symbol" ? key : String(key); }
+function project_toPrimitive(input, hint) { if (project_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (project_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var Project = /*#__PURE__*/function () {
+  function Project() {
+    project_classCallCheck(this, Project);
+  }
+  project_createClass(Project, [{
+    key: "init",
+    value: function init() {
+      $(document).ready(function () {
+        $('.play-button').click(function () {
+          var video = $(this).closest('.single-project-gallery').find('video')[0];
+          video.play();
+          $(this).addClass('d-none');
+          $(this).siblings('.pause-button').removeClass('d-none');
+        });
+        $('.pause-button').click(function () {
+          var video = $(this).closest('.single-project-gallery').find('video')[0];
+          video.pause();
+          $(this).addClass('d-none');
+          $(this).siblings('.play-button').removeClass('d-none');
+        });
+      });
+    }
+  }]);
+  return Project;
+}();
 ;// CONCATENATED MODULE: ./src/js/main.js
+
+
 
 
 
@@ -20503,6 +20601,10 @@ jquery_default()(function () {
   window.plugins.init();
   window.parts = new Parts();
   window.parts.init();
+  window.filter = new Filter();
+  window.filter.init();
+  window.project = new Project();
+  window.project.init();
 });
 
 // ===========================================================================

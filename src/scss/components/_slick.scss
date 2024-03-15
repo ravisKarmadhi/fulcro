@@ -18,9 +18,98 @@
     }
 }
 
+.capabilities-slider {
+    .slick-list {
+        margin: 0 -25px;
+
+        .slick-slide {
+            padding: 0 25px;
+        }
+    }
+}
+
 .clients-slider {
     .slick-list {
         overflow: visible;
     }
 
+}
+
+.slider-testimonial {
+    .slick-dots {
+        bottom: 60px;
+        text-align: end;
+
+        li {
+            width: 4px;
+            height: 4px;
+            margin: 0 0 0 20px;
+            transition: all 0.3s ease-in-out;
+
+            button {
+                background-color: $secondary;
+                width: 4px;
+                height: 4px;
+                opacity: 0.5;
+                border-radius: 50%;
+                padding: 0;
+                transition: all 0.3s ease-in-out;
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        .slick-active {
+            width: 47px !important;
+
+            button {
+                background-color: $white !important;
+                opacity: 1;
+                width: 47px !important;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+.single-project-slider {
+    .slick-dots {
+        bottom: -27px;
+        text-align: start;
+        width: fit-content;
+
+        li {
+            width: 4px;
+            height: 4px;
+            margin: 0 0 0 20px;
+            transition: all 0.3s ease-in-out;
+
+            button {
+                background-color: #8E8E8E;
+                width: 4px;
+                height: 4px;
+                opacity: 0.5;
+                border-radius: 50%;
+                padding: 0;
+                transition: all 0.3s ease-in-out;
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        .slick-active {
+            width: 47px !important;
+
+            button {
+                background-color: $primary !important;
+                opacity: 1;
+                width: 47px !important;
+                border-radius: 4px;
+            }
+        }
+    }
 }

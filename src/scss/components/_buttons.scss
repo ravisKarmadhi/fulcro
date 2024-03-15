@@ -46,3 +46,33 @@ button,
         }
     }
 }
+
+.slider-custom-btn {
+    button {
+        &:hover {
+            svg {
+                .inner-round {
+                    fill: $primary !important;
+                }
+
+                .inner-arrow {
+                    fill: $white !important;
+                }
+            }
+        }
+    }
+}
+
+.filter-button-project {
+    button {
+        opacity: 0.15;
+
+        &.highlight {
+            opacity: 1 !important;
+        }
+
+        &:hover {
+            opacity: 1 !important;
+        }
+    }
+}

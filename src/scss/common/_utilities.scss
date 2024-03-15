@@ -186,6 +186,10 @@
     border-radius: $radiusXM;
 }
 
+.fontMS {
+    font-size: $fontMS;
+}
+
 @include media-breakpoint-down(lg) {
 
     // font size

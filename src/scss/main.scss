@@ -4,6 +4,7 @@
 @import "../../node_modules/select2/dist/css/select2.min.css";
 // Slick
 @import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
 // AOS
 @import "../../node_modules/aos/src/sass/aos.scss";
 // bower:scss
@@ -38,6 +39,8 @@ $grid-breakpoints: (
 @import "layouts/_pages";
 // pages css
 @import "pages/_home";
+@import "pages/_project";
 // parts css
 @import "parts/_service_card.scss";
 @import "parts/_news_card.scss";
+@import "parts/hero_section.scss";
