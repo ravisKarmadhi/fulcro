@@ -1,0 +1,48 @@
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+}
+
+.btnX {
+    height: 51px;
+    line-height: 51px;
+
+    &.transparent-btn {
+        background-color: transparent !important;
+
+        &:hover {
+            background-color: $primary !important;
+        }
+    }
+
+    &.white-border {
+        border: 1px solid $white;
+
+        &:hover {
+            border: 1px solid $primary;
+        }
+    }
+
+    &.primary-border {
+        border: 1px solid $primary;
+
+        &:hover {
+            border: 1px solid $primary;
+            color: $white !important;
+        }
+    }
+
+    &.bgprimary-border {
+        border: 1px solid $primary;
+
+        &:hover {
+            border: 1px solid $primary;
+            color: $primary !important;
+            background-color: transparent !important;
+        }
+    }
+}

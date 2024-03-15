@@ -1,0 +1,361 @@
+// text color
+.textprimary {
+    color: $primary;
+}
+
+.textprimarylight {
+    color: $primarylight;
+}
+
+.textsecondary {
+    color: $secondary;
+}
+
+.textdarkblue {
+    color: $darkblue;
+}
+
+.textlightgray {
+    color: $lightgray;
+}
+
+// background color
+
+.bgprimary {
+    background-color: $primary;
+}
+
+.bgprimarylight {
+    background-color: $primarylight;
+}
+
+.bgsecondary {
+    background-color: $secondary;
+}
+
+.bgdarkblue {
+    background-color: $darkblue;
+}
+
+.bglightgray {
+    background-color: $lightgray;
+}
+
+// border color
+
+.borderprimary {
+    border: 1px solid $primary;
+}
+
+.borderprimarylight {
+    border: 1px solid $primarylight;
+}
+
+.bordersecondary {
+    border: 1px solid $secondary;
+}
+
+.borderdarkblue {
+    border: 1px solid $darkblue;
+}
+
+.borderlightgray {
+    border: 1px solid $lightgray;
+}
+
+// font size
+.fontX {
+    font-size: $fontX;
+}
+
+.fontS {
+    font-size: $fontS;
+}
+
+.fontM {
+    font-size: $fontM;
+}
+
+.fontL {
+    font-size: $fontL;
+}
+
+.fontXX {
+    font-size: $fontXX;
+}
+
+.fontXS {
+    font-size: $fontXS;
+}
+
+.fontXM {
+    font-size: $fontXM;
+}
+
+.fontXL {
+    font-size: $fontXL;
+}
+
+.fontSX {
+    font-size: $fontSX;
+}
+
+.fontSS {
+    font-size: $fontSS;
+}
+
+.fontSM {
+    font-size: $fontSM;
+}
+
+.fontSL {
+    font-size: $fontSL;
+}
+
+.fontMX {
+    font-size: $fontMX;
+}
+
+// line height
+.leadingX {
+    line-height: $leadingX;
+}
+
+.leadingS {
+    line-height: $leadingS;
+}
+
+.leadingM {
+    line-height: $leadingM;
+}
+
+.leadingL {
+    line-height: $leadingL;
+}
+
+.leadingXX {
+    line-height: $leadingXX;
+}
+
+.leadingXS {
+    line-height: $leadingXS;
+}
+
+.leadingXM {
+    line-height: $leadingXM;
+}
+
+.leadingXL {
+    line-height: $leadingXL;
+}
+
+.leadingSX {
+    line-height: $leadingSX;
+}
+
+.leadingSS {
+    line-height: $leadingSS;
+}
+
+.radiusX {
+    border-radius: $radiusX;
+}
+
+// border radius
+.radiusS {
+    border-radius: $radiusS;
+}
+
+.radiusM {
+    border-radius: $radiusM;
+}
+
+.radiusL {
+    border-radius: $radiusL;
+}
+
+.radiusXX {
+    border-radius: $radiusXX;
+}
+
+.radiusXS {
+    border-radius: $radiusXS;
+}
+
+.radiusXM {
+    border-radius: $radiusXM;
+}
+
+@include media-breakpoint-down(lg) {
+
+    // font size
+    .resfontX {
+        font-size: $fontX;
+    }
+
+    .resfontS {
+        font-size: $fontS;
+    }
+
+    .resfontM {
+        font-size: $fontM;
+    }
+
+    .resfontL {
+        font-size: $fontL;
+    }
+
+    .resfontXX {
+        font-size: $fontXX;
+    }
+
+    .resfontXS {
+        font-size: $fontXS;
+    }
+
+    .resfontXM {
+        font-size: $fontXM;
+    }
+
+    .resfontXL {
+        font-size: $fontXL;
+    }
+
+    .resfontSX {
+        font-size: $fontSX;
+    }
+
+    .resfontSS {
+        font-size: $fontSS;
+    }
+
+    .resfontSM {
+        font-size: $fontSM;
+    }
+
+    .resfontSL {
+        font-size: $fontSL;
+    }
+
+    .resfontMX {
+        font-size: $fontMX;
+    }
+
+    .resfontMS {
+        font-size: $resfontMS;
+    }
+
+    .resfontMM {
+        font-size: $resfontMM;
+    }
+
+    .resfontML {
+        font-size: $resfontML;
+    }
+
+    .resfontLX {
+        font-size: $resfontLX;
+    }
+
+    .resfontLS {
+        font-size: $resfontLS;
+    }
+
+    .resfontLM {
+        font-size: $resfontLM;
+    }
+
+    .resfontLL {
+        font-size: $resfontLL;
+    }
+
+    .resfontXXX {
+        font-size: $resfontXXX;
+    }
+
+    // Line Height
+    .resleadingX {
+        line-height: $leadingX;
+    }
+
+    .resleadingS {
+        line-height: $leadingS;
+    }
+
+    .resleadingM {
+        line-height: $leadingM;
+    }
+
+    .resleadingL {
+        line-height: $leadingL;
+    }
+
+    .resleadingXX {
+        line-height: $leadingXX;
+    }
+
+    .resleadingXS {
+        line-height: $leadingXS;
+    }
+
+    .resleadingXM {
+        line-height: $leadingXM;
+    }
+
+    .resleadingXL {
+        line-height: $leadingXL;
+    }
+
+    .resleadingSX {
+        line-height: $leadingSX;
+    }
+
+    .resleadingSS {
+        line-height: $leadingSS;
+    }
+
+    .resleadingSM {
+        line-height: $resleadingSM;
+    }
+
+    .resleadingSL {
+        line-height: $resleadingSL;
+    }
+
+    .resleadingMX {
+        line-height: $resleadingMX;
+    }
+
+    .resleadingMS {
+        line-height: $resleadingMS;
+    }
+
+    // border radius
+    .resradiusX {
+        border-radius: $radiusX;
+    }
+
+    .resradiusS {
+        border-radius: $radiusS;
+    }
+
+    .resradiusM {
+        border-radius: $radiusM;
+    }
+
+    .resradiusL {
+        border-radius: $radiusL;
+    }
+
+    .resradiusXX {
+        border-radius: $radiusXX;
+    }
+
+    .resradiusXS {
+        border-radius: $radiusXS;
+    }
+
+    .resradiusXM {
+        border-radius: $radiusXM;
+    }
+}

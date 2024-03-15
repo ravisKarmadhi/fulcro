@@ -1,0 +1,26 @@
+.our-service-slider {
+    .slick-list {
+        margin: 0 -25px;
+
+        .slick-slide {
+            padding: 0 25px;
+        }
+    }
+}
+
+.news-slider {
+    .slick-list {
+        margin: 0 -15px;
+
+        .slick-slide {
+            padding: 0 15px;
+        }
+    }
+}
+
+.clients-slider {
+    .slick-list {
+        overflow: visible;
+    }
+
+}

@@ -1,0 +1,33 @@
+.container {
+    max-width: 1440px;
+    padding-left: 79px;
+    padding-right: 79px;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+
+    >* {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.rowX {
+    margin-left: -25px;
+    margin-right: -25px;
+
+    >* {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+.top-radius {
+    border-radius: $radiusXX $radiusXX 0 0;
+}
+
+.w-fit {
+    width: fit-content;
+}
