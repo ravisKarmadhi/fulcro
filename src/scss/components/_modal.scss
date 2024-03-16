@@ -59,6 +59,4 @@
     background: rgba($color: #737373, $alpha: 0.2) ;
     @include generate-transition (all, 0.3s, ease-in-out);
     opacity: inherit !important;
-
-    &.fade {}
 }
