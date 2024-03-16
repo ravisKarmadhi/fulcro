@@ -44,6 +44,9 @@
 .top-radius {
     border-radius: $radiusXX $radiusXX 0 0;
 }
+.bottom-radiusS {
+    border-radius: 0 0 $radiusS $radiusS;
+}
 
 .w-fit {
     width: fit-content;

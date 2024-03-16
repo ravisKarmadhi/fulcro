@@ -10,12 +10,13 @@ button,
 .btnX {
     height: 51px;
     line-height: 51px;
-    
+
     @include media-breakpoint-down(lg) {
         height: 30px !important;
         line-height: 30px !important;
     }
-    &.btnM{
+
+    &.btnM {
         height: 58px;
         line-height: 58px;
     }
@@ -52,6 +53,17 @@ button,
             border: 1px solid $primary;
             color: $primary !important;
             background-color: transparent !important;
+        }
+    }
+
+    &.bgwhite-border {
+        background: transparent;
+        border: 1px solid $white;
+        
+        &:hover {
+            color: $black !important;
+            background: $white;
+            border: 1px solid $white;
         }
     }
 }

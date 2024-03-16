@@ -11,6 +11,7 @@ import { Filter } from './parts/filter.js'
 import { Project } from './parts/project.js'
 import { Privacy } from './parts/privacy.js';
 import { Select } from './parts/select.js';
+import { Header } from './parts/header.js';
 
 
 // export for others scripts to use
@@ -47,6 +48,9 @@ $(function () {
 
   window.select = new Select();
   window.select.init();
+
+  window.header = new Header();
+  window.header.init();
 });
 
 // ===========================================================================

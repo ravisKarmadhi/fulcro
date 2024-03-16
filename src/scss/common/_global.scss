@@ -137,23 +137,63 @@ textarea {
   background: $black;
 }
 
+.dmb-0 {
+  margin-bottom: 0px !important;
+}
+
+.dpt-0 {
+  padding-top: 0px !important;
+}
+
+.dpb-0 {
+  padding-bottom: 0px !important;
+}
+
+@include media-breakpoint-down(lg) {
+  .tmt-0 {
+    margin-top: 0px !important;
+  }
+
+  .tmb-0 {
+    margin-bottom: 0px !important;
+  }
+
+  .tpt-0 {
+    padding-top: 0px !important;
+  }
+
+  .tpb-0 {
+    padding-bottom: 0px !important;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .mmt-0 {
+    margin-top: 0px !important;
+  }
+
+  .mmb-0 {
+    margin-bottom: 0px !important;
+  }
+
+  .mpt-0 {
+    padding-top: 0px !important;
+  }
+
+  .mpb-0 {
+    padding-bottom: 0px !important;
+  }
+}
+
 @for $i from 1 through 70 {
   .dmt-#{$i*5} {
     margin-top: #{5 * $i}px;
-  }
-
-  .dmt-00 {
-    margin-top: 0;
   }
 }
 
 @for $i from 1 through 70 {
   .dmb-#{$i*5} {
     margin-bottom: #{5 * $i}px;
-  }
-
-  .dmb-00 {
-    margin-bottom: 0;
   }
 }
 
@@ -162,19 +202,11 @@ textarea {
     .tmt-#{$i*5} {
       margin-top: #{5 * $i}px !important;
     }
-
-    .tmt-00 {
-      margin-top: 0;
-    }
   }
 
   @for $i from 1 through 70 {
     .tmb-#{$i*5} {
       margin-bottom: #{5 * $i}px !important;
-    }
-
-    .tmb-00 {
-      margin-bottom: 0;
     }
   }
 }
@@ -184,19 +216,11 @@ textarea {
     .mmt-#{$i*5} {
       margin-top: #{5 * $i}px !important;
     }
-
-    .mmt-00 {
-      margin-top: 0;
-    }
   }
 
   @for $i from 1 through 70 {
     .mmb-#{$i*5} {
       margin-bottom: #{5 * $i}px !important;
-    }
-
-    .mmb-00 {
-      margin-bottom: 0;
     }
   }
 }
@@ -205,19 +229,11 @@ textarea {
   .dpt-#{$i*5} {
     padding-top: #{5 * $i}px;
   }
-
-  .dpt-00 {
-    padding-top: 0;
-  }
 }
 
 @for $i from 1 through 70 {
   .dpb-#{$i*5} {
     padding-bottom: #{5 * $i}px;
-  }
-
-  .dpb-00 {
-    padding-bottom: 0 !important;
   }
 }
 
@@ -226,19 +242,11 @@ textarea {
     .tpt-#{$i*5} {
       padding-top: #{5 * $i}px !important;
     }
-
-    .tpt-00 {
-      padding-top: 0 !important;
-    }
   }
 
   @for $i from 1 through 70 {
     .tpb-#{$i*5} {
       padding-bottom: #{5 * $i}px !important;
-    }
-
-    .tpb-00 {
-      padding-bottom: 0 !important;
     }
   }
 }
@@ -248,19 +256,11 @@ textarea {
     .mpt-#{$i*5} {
       padding-top: #{5 * $i}px !important;
     }
-
-    .mpt-00 {
-      padding-top: 0 !important;
-    }
   }
 
   @for $i from 1 through 70 {
     .mpb-#{$i*5} {
       padding-bottom: #{5 * $i}px !important;
-    }
-
-    .mpb-00 {
-      padding-bottom: 0 !important;
     }
   }
 }
