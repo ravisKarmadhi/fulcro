@@ -10,10 +10,14 @@ button,
 .btnX {
     height: 51px;
     line-height: 51px;
-
+    
     @include media-breakpoint-down(lg) {
         height: 30px !important;
         line-height: 30px !important;
+    }
+    &.btnM{
+        height: 58px;
+        line-height: 58px;
     }
 
     &.transparent-btn {
