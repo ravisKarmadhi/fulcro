@@ -55,4 +55,8 @@ $(function () {
 
 // ===========================================================================
 
-
+$(document).ready(function () {
+  if (windowWidth >= 0 && windowWidth <= 992) {
+    $('.project-details-res ').insertAfter('.single-product-slider');
+  }
+});

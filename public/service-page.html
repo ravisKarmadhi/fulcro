@@ -15,11 +15,12 @@
     <link href="assets/css/main.css" rel="stylesheet" />
 </head>
 
-<body>
+<body id="body">
     <header></header>
     <main>
-        <section class="vh-100 position-relative">
-            <div class="h-100 w-100 position-fixed">
+        <!-- MAIN HERO TWO SECTION -->
+        <section class="position-relative hero-main-two  res-hero-main-small z-0 overflow-hidden ">
+            <div class="h-100 hero-main-two res-hero-main-small w-100 position-fixed">
                 <img src="assets/images/hero-home.png" class="w-100 h-100 object-cover position-absolute top-0 start-0"
                     alt="">
                 <img src="assets/images/hero-layer.svg"
@@ -27,10 +28,11 @@
                 <div class="position-absolute top-center w-100">
                     <div class="container position-relative">
                         <div class="row">
-                            <div class="col-lg-12 ">
-                                <div class="art text-capitalize text-white fontMX lh-1">Upfront design</div>
-                                <div class="dmt-20 text-white art fontXS leadingXX col-lg-5">We blend multidisciplinary
-                                    experience with interdisciplinary excellence.
+                            <div class="col-lg-7">
+                                <div class="art text-capitalize text-white fontMX leadingSS resfontSM resleadingSX">
+                                    Upfront design</div>
+                                <div class="dmt-20 tmt-25 resfontM text-white art fontXS leadingXX col-lg-10">We design,
+                                    We blend multidisciplinary experience with interdisciplinary excellence.
                                 </div>
 
                             </div>
@@ -38,14 +40,21 @@
                     </div>
                 </div>
             </div>
+            <button
+                class="z-1 position-absolute dmb-80 bg-transparent p-0 border-0 left-center bottom-0 scroll-down-btn">
+                <img src="assets/images/arrow-down.svg" class="" alt="" />
+            </button>
         </section>
 
-        <section class="position-relative bg-white dpt-160 dpb-175 top-radius">
+        <!-- OVERVIEW SECTION -->
+        <div class="spacing dpt-160 tpt-80 position-relative bg-white top-radius"></div>
+        <section class="position-relative bg-white">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 pe-4">
+                    <div class="col-lg-8 pe-lg-4">
                         <div class="artm textprimary lh-1 fontM dmb-30">Overview</div>
-                        <div class="textprimary art fontSL leadingSX">The way Fulcro works is evidenced in our mantra -
+                        <div class="textprimary art fontSL leadingSX resfontLL resleadingMS">The way Fulcro works is
+                            evidenced in our mantra -
                             People first, followed closely by Process and Technology.​
                         </div>
                     </div>
@@ -53,6 +62,8 @@
             </div>
         </section>
 
+        <!-- IMAGE CONTENT LEFT SECTION -->
+        <div class="spacing dpt-175 tpt-90 position-relative bg-white"></div>
         <section class="image-content bg-white position-relative left-image-content">
             <div class="container">
                 <div class="row rowX align-items-center">
@@ -65,35 +76,46 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 mx-auto px-4">
-                        <div class="px-1">
-                            <div class="artm textprimary fontSM leadingSX pe-lg-2">
-                                Upfront Design
+                    <div class="col-lg-5 mx-auto px-lg-4 tpt-40">
+                        <div class="px-lg-1">
+                            <div class="artm textprimary fontSM leadingSX pe-lg-2 resfontLM resleadingMX">
+                                Our people directly reflect our capabilities.
                             </div>
-                            <div class="art textdarkblue opacity-50 fontXX leadingXS dpb-40">
+                            <div class="art textdarkblue opacity-50 fontXX leadingXS dpb-40 resfontM resleadingS">
                                 <p class="dmt-40">
-                                    Fulcro are unique in the design and build sector. We are at ease breaking from the
-                                    traditional conventions and delivery models the industry dictates.
+                                    At Fulcro, our people are centric to everything we do.
                                 </p>
-                                <p class="dmt-40">Our method of
-                                    delivery is not constrained by a single discipline. We are a blend of
-                                    multidisciplinary and interdisciplinary technical excellence and deliver our
-                                    services with determination, passion and integrity.
+                                <p class="dmt-40">From our authentic engagement with clients
+                                    through to our culture of inclusivity in internal decision making. Our people are
+                                    the beating heart of
+                                    Fulcro.
+                                </p>
+
+                                <p class="dmt-40">Our focus on support and wellbeing is reflected in the commitment and
+                                    loyalty our
+                                    people
+                                    demonstrate daily.
                                 </p>
                             </div>
+                            <a href="#"
+                                class="textprimary primary-border resfontS transparent-btn transition px-4 radiusXS btnX text-capitalize art fontL text-decoration-none d-inline-block">
 
+                                Learn More
+
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="dpt-155 position-relative bg-white"></div>
-        <section class="dpt-110 dpb-105 position-relative bgsecondary">
+        <!-- OUR CAPABILITIES SECTION -->
+        <div class="dpt-155 tpt-70 position-relative bg-white"></div>
+        <section class="dpt-110 tpt-70 dpb-105 tpb-75 position-relative bgsecondary">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 d-flex align-items-center justify-content-between">
-                        <div class="artm textdarkblue lh-1 fontSM">Our Capabilities</div>
+                        <div class="artm textdarkblue lh-1 fontSM resfontXS">Our Capabilities</div>
                         <div class="capablities-slider-btn slider-custom-btn">
                             <button class="bg-transparent p-0 border-0 slick--prev">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40.473" height="40.473"
@@ -137,7 +159,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="col-12 capabilities-slider dmt-55">
+                    <div class="col-12 capabilities-slider dmt-55 tmt-35">
                         <div class="single-service">
                             <a href="#"
                                 class="radiusX overflow-hidden d-block bg-white text-decoration-none card-hover">
@@ -146,13 +168,13 @@
                                         alt="" />
                                 </div>
                                 <div class="inner-content">
-                                    <div class="artm leadingXM textprimary fontXL">Upfront Design</div>
-                                    <div class="dmt-20 art fontL leadingXX opacity-50 textdarkblue">
+                                    <div class="artm leadingXM textprimary fontXL resfontM lh-1">Upfront Design</div>
+                                    <div
+                                        class="dmt-20 tmt-15 art fontL leadingXX opacity-50 textdarkblue resfontX resleadingSL">
                                         Fulcro are unique in the design and build sector. We are at ease breaking from
                                         the traditional
                                         conventions and delivery models the industry dictates.
                                     </div>
-
                                 </div>
                             </a>
                         </div>
@@ -164,13 +186,13 @@
                                         alt="" />
                                 </div>
                                 <div class="inner-content">
-                                    <div class="artm leadingXM textprimary fontXL">Upfront Design</div>
-                                    <div class="dmt-20 art fontL leadingXX opacity-50 textdarkblue">
+                                    <div class="artm leadingXM textprimary fontXL resfontM lh-1">Upfront Design</div>
+                                    <div
+                                        class="dmt-20 tmt-15 art fontL leadingXX opacity-50 textdarkblue resfontX resleadingSL">
                                         Fulcro are unique in the design and build sector. We are at ease breaking from
                                         the traditional
                                         conventions and delivery models the industry dictates.
                                     </div>
-
                                 </div>
                             </a>
                         </div>
@@ -182,13 +204,13 @@
                                         alt="" />
                                 </div>
                                 <div class="inner-content">
-                                    <div class="artm leadingXM textprimary fontXL">Upfront Design</div>
-                                    <div class="dmt-20 art fontL leadingXX opacity-50 textdarkblue">
+                                    <div class="artm leadingXM textprimary fontXL resfontM lh-1">Upfront Design</div>
+                                    <div
+                                        class="dmt-20 tmt-15 art fontL leadingXX opacity-50 textdarkblue resfontX resleadingSL">
                                         Fulcro are unique in the design and build sector. We are at ease breaking from
                                         the traditional
                                         conventions and delivery models the industry dictates.
                                     </div>
-
                                 </div>
                             </a>
                         </div>
@@ -200,13 +222,13 @@
                                         alt="" />
                                 </div>
                                 <div class="inner-content">
-                                    <div class="artm leadingXM textprimary fontXL">Upfront Design</div>
-                                    <div class="dmt-20 art fontL leadingXX opacity-50 textdarkblue">
+                                    <div class="artm leadingXM textprimary fontXL resfontM lh-1">Upfront Design</div>
+                                    <div
+                                        class="dmt-20 tmt-15 art fontL leadingXX opacity-50 textdarkblue resfontX resleadingSL">
                                         Fulcro are unique in the design and build sector. We are at ease breaking from
                                         the traditional
                                         conventions and delivery models the industry dictates.
                                     </div>
-
                                 </div>
                             </a>
                         </div>
@@ -215,7 +237,8 @@
             </div>
         </section>
 
-        <div class="dpt-115 position-relative bg-white"></div>
+        <!-- IMAGE CONTENT LEFT SECTION -->
+        <div class="dpt-115 tpt-70 position-relative bg-white"></div>
         <section class="image-content bg-white position-relative left-image-content">
             <div class="container">
                 <div class="row rowX align-items-center">
@@ -228,24 +251,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 mx-auto px-4">
-                        <div class="px-1">
-                            <div class="artm textprimary fontSM leadingSX pe-lg-2">
-                                How we work - Extreme Collaboration
+                    <div class="col-lg-5 mx-auto px-lg-4 tpt-40">
+                        <div class="px-lg-1">
+                            <div class="artm textprimary fontSM leadingSX pe-lg-2 resfontLM resleadingMX">
+                                Our people directly reflect our capabilities.
                             </div>
-                            <div class="art textdarkblue opacity-50 fontXX leadingXS dpb-40">
+                            <div class="art textdarkblue opacity-50 fontXX leadingXS dpb-40 resfontM resleadingS">
                                 <p class="dmt-40">
-                                    Fulcro are unique in the design and build sector. We are at ease breaking from the
-                                    traditional conventions and delivery models the industry dictates.
+                                    At Fulcro, our people are centric to everything we do.
                                 </p>
-                                <p class="dmt-40">Our method of
-                                    delivery is not constrained by a single discipline. We are a blend of
-                                    multidisciplinary and interdisciplinary technical excellence and deliver our
-                                    services with determination, passion and integrity.
+                                <p class="dmt-40">From our authentic engagement with clients
+                                    through to our culture of inclusivity in internal decision making. Our people are
+                                    the beating heart of
+                                    Fulcro.
+                                </p>
+
+                                <p class="dmt-40">Our focus on support and wellbeing is reflected in the commitment and
+                                    loyalty our
+                                    people
+                                    demonstrate daily.
                                 </p>
                             </div>
                             <a href="#"
-                                class="text-white bgprimary-border bgprimary transition px-4 radiusXS btnX text-capitalize art fontL text-decoration-none d-inline-block">
+                                class="textprimary primary-border resfontS transparent-btn transition px-4 radiusXS btnX text-capitalize art fontL text-decoration-none d-inline-block">
 
                                 Learn More
 
@@ -256,52 +284,55 @@
             </div>
         </section>
 
-        <div class="dpt-170 position-relative bg-white"></div>
+        <div class="spacing tpt-105 dpt-170 position-relative bg-white"></div>
         <section class="bg-white position-relative">
             <div class="container">
                 <div class="row rowX">
                     <div class="col-12 d-flex align-items-center justify-content-between dmb-40">
-                        <div class="artm fontSX textprimary">Related Projects</div>
+                        <div class="artm fontSX textprimary resfontXS">Related Projects</div>
                         <a href="#"
-                            class="text-white bgprimary-border bgprimary transition px-4 radiusXS btnX text-capitalize art fontL text-decoration-none d-inline-block">
+                            class="textprimary primary-border resfontS transparent-btn transition px-lg-4 radiusXS btnX text-capitalize art fontL text-decoration-none d-inline-block">
                             <span class="px-3">
                                 View All
                             </span>
                         </a>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 tmb-50">
                         <a href="#" class="d-block text-decoration-none card-hover">
                             <div class="single-project overflow-hidden radiusX">
                                 <img src="assets/images/hero-home.png"
                                     class=" w-100 h-100 object-cover overflow-hidden img" alt="" />
                             </div>
-                            <div class="artm textprimary fontXX lh-1 dmt-30">Battersea Phase 2</div>
-                            <div class="mt-2 textprimary opacity-50 text-capitalize art fontM">London, Uk</div>
+                            <div class="artm textprimary fontXX resfontM lh-1 dmt-30 tmt-20">Battersea Phase 2</div>
+                            <div class="mt-2 textprimary opacity-50 text-capitalize art fontM resfontS lh-1">London, Uk
+                            </div>
                         </a>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 tmb-50">
                         <a href="#" class="d-block text-decoration-none card-hover">
                             <div class="single-project overflow-hidden radiusX">
                                 <img src="assets/images/hero-home.png"
                                     class=" w-100 h-100 object-cover overflow-hidden img" alt="" />
                             </div>
-                            <div class="artm textprimary fontXX lh-1 dmt-30">Knightsbridge Estate</div>
-                            <div class="mt-2 textprimary opacity-50 text-capitalize art fontM">London, Uk</div>
+                            <div class="artm textprimary fontXX resfontM lh-1 dmt-30 tmt-20">Battersea Phase 2</div>
+                            <div class="mt-2 textprimary opacity-50 text-capitalize art fontM resfontS lh-1">London, Uk
+                            </div>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="position-relative bg-white dpt-105"></div>
+        <div class="spacing position-relative bg-white tpt-10 dpt-105"></div>
         <section class="bgprimary position-relative ">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 dpt-95 dpb-160 slider-testimonial mb-0">
+                    <div class="col-lg-12 dpt-95 dpb-160 tpb-150 slider-testimonial mb-0">
+
                         <div>
                             <div class="col-lg-9">
-                                <div class="text-white artm fontXX lh-1">Testimonial</div>
-                                <div class="text-white dmt-70 art fontSS leadingXL">
+                                <div class="text-white artm fontXX lh-1 resfontXX">Testimonial</div>
+                                <div class="text-white dmt-70 art fontSS leadingXL resfontLS resleadingXS">
                                     “Working with Fulcro enables myself and my team at Landsec to gain better visibility
                                     of
                                     the
@@ -309,7 +340,11 @@
                                     plans
                                     to facilitate future decision making.”
                                 </div>
-                                <div class="text-white dmt-80 artm lh-1 fontL">Paul Langham, Head of Project Management
+                                <div class="text-white dmt-80 tmt-65 artm lh-1 fontL resfontS"><span
+                                        class="d-lg-inline-block d-block mb-lg-0 mb-2">
+                                        Paul Langham,</span> Head
+                                    of
+                                    Project Management
                                     and
                                     Engineering
                                 </div>
@@ -317,8 +352,8 @@
                         </div>
                         <div>
                             <div class="col-lg-9">
-                                <div class="text-white artm fontXX lh-1">Testimonial</div>
-                                <div class="text-white dmt-70 art fontSS leadingXL">
+                                <div class="text-white artm fontXX lh-1 resfontXX">Testimonial</div>
+                                <div class="text-white dmt-70 art fontSS leadingXL resfontLS resleadingXS">
                                     “Working with Fulcro enables myself and my team at Landsec to gain better visibility
                                     of
                                     the
@@ -326,7 +361,11 @@
                                     plans
                                     to facilitate future decision making.”
                                 </div>
-                                <div class="text-white dmt-80 artm lh-1 fontL">Paul Langham, Head of Project Management
+                                <div class="text-white dmt-80 tmt-65 artm lh-1 fontL resfontS"><span
+                                        class="d-lg-inline-block d-block mb-lg-0 mb-2">
+                                        Paul Langham,</span> Head
+                                    of
+                                    Project Management
                                     and
                                     Engineering
                                 </div>
@@ -334,8 +373,8 @@
                         </div>
                         <div>
                             <div class="col-lg-9">
-                                <div class="text-white artm fontXX lh-1">Testimonial</div>
-                                <div class="text-white dmt-70 art fontSS leadingXL">
+                                <div class="text-white artm fontXX lh-1 resfontXX">Testimonial</div>
+                                <div class="text-white dmt-70 art fontSS leadingXL resfontLS resleadingXS">
                                     “Working with Fulcro enables myself and my team at Landsec to gain better visibility
                                     of
                                     the
@@ -343,110 +382,109 @@
                                     plans
                                     to facilitate future decision making.”
                                 </div>
-                                <div class="text-white dmt-80 artm lh-1 fontL">Paul Langham, Head of Project Management
-                                    and
-                                    Engineering
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="col-lg-9">
-                                <div class="text-white artm fontXX lh-1">Testimonial</div>
-                                <div class="text-white dmt-70 art fontSS leadingXL">
-                                    “Working with Fulcro enables myself and my team at Landsec to gain better visibility
+                                <div class="text-white dmt-80 tmt-65 artm lh-1 fontL resfontS"><span
+                                        class="d-lg-inline-block d-block mb-lg-0 mb-2">
+                                        Paul Langham,</span> Head
                                     of
-                                    the
-                                    design’s state of completeness. They have helped us both to make decisions and adopt
-                                    plans
-                                    to facilitate future decision making.”
-                                </div>
-                                <div class="text-white dmt-80 artm lh-1 fontL">Paul Langham, Head of Project Management
+                                    Project Management
                                     and
                                     Engineering
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="position-relative bg-white dpt-120"></div>
+        <div class="position-relative bg-white dpt-120 tpt-35"></div>
         <section class="image-content bg-white position-relative right-image-content">
             <div class="container">
                 <div class="row rowX align-items-center">
 
-                    <div class="col-lg-5 mx-auto px-4">
-                        <div class="px-1">
-                            <div class="artm textprimary fontSM leadingSX pe-lg-2">
-                                Upfront Design
+                    <div class="order-lg-1 order-2 col-lg-5 mx-auto px-lg-4 tpt-40">
+                        <div class="px-lg-1">
+                            <div class="artm textprimary fontSM leadingSX pe-lg-2 resfontLM resleadingMX">
+                                Our people directly reflect our capabilities.
                             </div>
-                            <div class="art textdarkblue opacity-50 fontXX leadingXS dpb-40">
+                            <div class="art textdarkblue opacity-50 fontXX leadingXS dpb-40 resfontM resleadingS">
                                 <p class="dmt-40">
-                                    Fulcro are unique in the design and build sector. We are at ease breaking from the
-                                    traditional conventions and delivery models the industry dictates.
+                                    At Fulcro, our people are centric to everything we do.
                                 </p>
-                                <p class="dmt-40">
-                                    Our method of
-                                    delivery is not constrained by a single discipline. We are a blend of
-                                    multidisciplinary and interdisciplinary technical excellence and deliver our
-                                    services with determination, passion and integrity.
+                                <p class="dmt-40">From our authentic engagement with clients
+                                    through to our culture of inclusivity in internal decision making. Our people are
+                                    the beating heart of
+                                    Fulcro.
+                                </p>
+
+                                <p class="dmt-40">Our focus on support and wellbeing is reflected in the commitment and
+                                    loyalty our
+                                    people
+                                    demonstrate daily.
                                 </p>
                             </div>
                             <a href="#"
-                                class="text-white bgprimary-border bgprimary transition px-4 radiusXS btnX text-capitalize art fontL text-decoration-none d-inline-block">
+                                class="textprimary primary-border resfontS transparent-btn transition px-4 radiusXS btnX text-capitalize art fontL text-decoration-none d-inline-block">
 
                                 Learn More
 
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-6 d-flex justify-content-end">
+
+                    <div class="order-lg-2 order-1 col-lg-6 d-flex justify-content-lg-end">
                         <div class="card-img position-relative">
                             <img src="assets/images/hero-home.png" class="w-100 h-100 object-cover main-img radiusX"
                                 alt="" />
-                            <div class="position-absolute  end-0 inner-img radiusX overflow-hidden">
+                            <div class="position-absolute inner-img radiusX overflow-hidden">
                                 <img src="assets/images/machine-1.svg" class="w-100 h-100 object-cover " />
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <div class="position-relative bg-white dpt-230"></div>
+        <div class="position-relative bg-white dpt-230 tpt-80"></div>
         <section class="bg-white position-relative">
             <div class="container">
                 <div class="row rowX">
                     <div class="col-12 d-flex align-items-center justify-content-between dmb-40">
-                        <div class="artm fontSM textprimary">Related Projects</div>
+                        <div class="artm fontSM textprimary lh-1 resfontXS">Related Projects
+                        </div>
                         <a href="#"
-                            class="text-white bgprimary-border bgprimary transition px-4 radiusXS btnX text-capitalize art fontL text-decoration-none d-inline-block">
+                            class="textprimary primary-border transparent-btn transition px-lg-4 radiusXS btnX text-capitalize art resfontS fontL text-decoration-none d-inline-block">
                             <span class="px-3">
                                 View All
                             </span>
                         </a>
                     </div>
-                    <div class="col-lg-6">
+
+                    <div class="col-lg-6 tmb-65">
                         <a href="#" class="d-block text-decoration-none card-hover other-service">
                             <div class="radiusX overflow-hidden service-img">
                                 <img src="assets/images/hero-home.png" class="w-100 h-100 object-cover img" />
                             </div>
-                            <div class="artm dmt-30 lh-1 textprimary fontXL">Design Coordination & Delivery</div>
+                            <div class="artm dmt-30 tmt-20 lh-1 textprimary fontXL resfontL">Design Coordination &
+                                Delivery</div>
                             <button
-                                class="text-decoration-underline lh-1 fontL dmt-30 artm bg-transparent p-0 border-0 textdarkblue">
+                                class="text-decoration-underline lh-1 fontL dmt-30 tmt-15 resfontS artm bg-transparent p-0 border-0 textdarkblue">
                                 Learn More
                             </button>
                         </a>
                     </div>
-                    <div class="col-lg-6">
+
+                    <div class="col-lg-6 tmb-65">
                         <a href="#" class="d-block text-decoration-none card-hover other-service">
                             <div class="radiusX overflow-hidden service-img">
                                 <img src="assets/images/hero-home.png" class="w-100 h-100 object-cover img" />
                             </div>
-                            <div class="artm dmt-30 lh-1 textprimary fontXL">Design Coordination & Delivery</div>
+                            <div class="artm dmt-30 tmt-20 lh-1 textprimary fontXL resfontL">Design Coordination &
+                                Delivery</div>
                             <button
-                                class="text-decoration-underline lh-1 fontL dmt-30 artm bg-transparent p-0 border-0 textdarkblue">
+                                class="text-decoration-underline lh-1 fontL dmt-30 tmt-15 resfontS artm bg-transparent p-0 border-0 textdarkblue">
                                 Learn More
                             </button>
                         </a>
@@ -454,7 +492,7 @@
                 </div>
             </div>
         </section>
-        <div class="dpt-120 position-relative bg-white"></div>
+        <div class="dpt-120 position-relative bg-white tpt-20"></div>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

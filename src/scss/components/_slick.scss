@@ -2,8 +2,18 @@
     .slick-list {
         margin: 0 -25px;
 
+        @include media-breakpoint-down(lg) {
+            margin: 0 -6px;
+            overflow: visible;
+        }
+
         .slick-slide {
             padding: 0 25px;
+
+            @include media-breakpoint-down(lg) {
+                padding: 0 6px;
+
+            }
         }
     }
 }
@@ -12,8 +22,38 @@
     .slick-list {
         margin: 0 -15px;
 
+        @include media-breakpoint-down(lg) {
+            margin: 0 -6px;
+            overflow: visible;
+        }
+
         .slick-slide {
             padding: 0 15px;
+
+            @include media-breakpoint-down(lg) {
+                padding: 0 6px;
+
+            }
+        }
+    }
+}
+
+.values-slider {
+    .slick-list {
+        margin: 0 -15px;
+
+        @include media-breakpoint-down(lg) {
+            margin: 0 -6px;
+            overflow: visible;
+        }
+
+        .slick-slide {
+            padding: 0 15px;
+
+            @include media-breakpoint-down(lg) {
+                padding: 0 6px;
+
+            }
         }
     }
 }
@@ -21,9 +61,20 @@
 .capabilities-slider {
     .slick-list {
         margin: 0 -25px;
+        overflow: visible;
+
+        @include media-breakpoint-down(lg) {
+            margin: 0 -6px;
+
+        }
 
         .slick-slide {
             padding: 0 25px;
+
+            @include media-breakpoint-down(lg) {
+                padding: 0 6px;
+
+            }
         }
     }
 }
@@ -31,6 +82,21 @@
 .clients-slider {
     .slick-list {
         overflow: visible;
+
+        .slick-slide {
+            padding: 0 10px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            overflow: visible;
+        }
+
+        img {
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
     }
 
 }
@@ -40,11 +106,20 @@
         bottom: 60px;
         text-align: end;
 
+        @include media-breakpoint-down(lg) {
+            text-align: start;
+            bottom: 90px;
+        }
+
         li {
             width: 4px;
             height: 4px;
             margin: 0 0 0 20px;
             transition: all 0.3s ease-in-out;
+
+            @include media-breakpoint-down(lg) {
+                margin: 0 20px 0 0;
+            }
 
             button {
                 background-color: $secondary;

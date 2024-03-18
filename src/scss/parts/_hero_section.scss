@@ -1,3 +1,36 @@
 .hero-section-two {
-    height: 680px;
+    height: 710px;
+    margin-bottom: -30px;
+
+    @include media-breakpoint-down(lg) {
+        height: 410px;
+
+    }
+}
+
+
+.hero-main {
+    height: 800px !important;
+    margin-bottom: -30px;
+
+    @include media-breakpoint-down(lg) {
+
+        height: 675px !important;
+
+    }
+}
+
+.hero-main-two {
+    height: 775px !important;
+    margin-bottom: -30px;
+
+    @include media-breakpoint-down(lg) {
+        height: 500px !important;
+    }
+}
+
+.res-hero-main-small {
+    @include media-breakpoint-down(lg) {
+        height: 440px !important;
+    }
 }

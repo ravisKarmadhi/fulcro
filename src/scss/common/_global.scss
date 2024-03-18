@@ -20,6 +20,7 @@ p {
 
 body {
   overflow-x: hidden;
+
 }
 
 button:focus {
@@ -129,7 +130,7 @@ textarea {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #7e7e7e;
+  background: transparent;
 }
 
 ::selection {

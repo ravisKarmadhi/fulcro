@@ -1,0 +1,11 @@
+.over-valur-single {
+    a {
+        .value-img {
+            height: 318px;
+
+            @include media-breakpoint-down(lg) {
+                height: 205px;
+            }
+        }
+    }
+}
