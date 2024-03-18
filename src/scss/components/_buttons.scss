@@ -40,20 +40,20 @@ button,
             color: $white !important;
         }
     }
-
-    &.bgprimary-border {
-        border: 1px solid $primary;
-
-        &:hover {
-            border: 1px solid $primary;
-            color: $primary !important;
-            background-color: transparent !important;
-        }
-    }
 }
 
 .slider-custom-btn {
     button {
+        @include media-breakpoint-down(lg) {
+            width: 30px;
+            height: 30px;
+
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
         &:hover {
             svg {
                 .inner-round {
@@ -71,6 +71,8 @@ button,
 .filter-button-project {
     button {
         opacity: 0.15;
+        height: 30px;
+        line-height: 32px;
 
         &.highlight {
             opacity: 1 !important;
@@ -78,6 +80,34 @@ button,
 
         &:hover {
             opacity: 1 !important;
+        }
+    }
+}
+
+.scroll-down-btn {
+    animation: identifier 1s ease-in-out infinite;
+    margin-top: 0;
+    opacity: 0;
+
+    @include media-breakpoint-down(lg) {
+        width: 30px !important;
+        height: 30px !important;
+
+        img {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+
+    @keyframes identifier {
+        0% {
+            margin-bottom: -20px;
+            opacity: 0;
+        }
+
+        100% {
+            margin-top: -20px;
+            opacity: 1;
         }
     }
 }

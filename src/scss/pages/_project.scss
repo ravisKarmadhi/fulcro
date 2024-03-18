@@ -1,12 +1,21 @@
 .project-drtails {
-    padding: 50px;
+    padding: 50px 50px 30px 50px;
     max-width: 444px;
     margin-left: auto;
     top: 90px;
+
+    @include media-breakpoint-down(lg) {
+        border-radius: 0 !important;
+        padding: 50px 20px 65px 20px;
+    }
 }
 
 .single-project-slider {
     .single-project-gallery {
         height: 635px;
+
+        @include media-breakpoint-down(lg) {
+            height: 335px;
+        }
     }
 }

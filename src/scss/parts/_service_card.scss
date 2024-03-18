@@ -4,10 +4,19 @@
 
         .service-card {
             height: 244px;
+
+            @include media-breakpoint-down(lg) {
+                height: 164px;
+            }
         }
 
         .inner-content {
             padding: 47px 26px 50px 31px;
+
+            @include media-breakpoint-down(lg) {
+                padding: 26px 16px 22px 16px;
+
+            }
         }
     }
 }

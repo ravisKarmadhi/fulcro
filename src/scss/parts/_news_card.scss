@@ -2,6 +2,10 @@
     a {
         .news-card-img {
             height: 277px;
+
+            @include media-breakpoint-down(lg) {
+                height: 165px;
+            }
         }
     }
 }

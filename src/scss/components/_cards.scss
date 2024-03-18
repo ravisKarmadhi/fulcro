@@ -15,6 +15,11 @@
     .card-img {
         height: 555px;
         width: 555px;
+
+        @include media-breakpoint-down(lg) {
+            height: 320px;
+            width: 320px;
+        }
     }
 
     &.left-image-content {
@@ -24,17 +29,35 @@
                 height: 277px;
                 bottom: 60px;
                 right: -60px;
+
+                @include media-breakpoint-down(lg) {
+                    width: 160px;
+                    height: 160px;
+                    bottom: 30px;
+                    right: -30px;
+                }
             }
         }
     }
 
     &.right-image-content {
         .card-img {
+            @include media-breakpoint-down(lg) {
+                margin-left: 30px;
+            }
+
             .inner-img {
                 width: 277px;
                 height: 277px;
                 bottom: 60px;
                 left: -60px;
+
+                @include media-breakpoint-down(lg) {
+                    width: 160px;
+                    height: 160px;
+                    bottom: 30px;
+                    left: -30px;
+                }
             }
         }
     }
@@ -42,10 +65,28 @@
 
 .single-project {
     height: 413px;
+
+    @include media-breakpoint-down(lg) {
+        height: 248px;
+    }
 }
 
 .other-service {
     .service-img {
         height: 380px;
+
+        @include media-breakpoint-down(lg) {
+            height: 220px;
+        }
+    }
+}
+
+.single-team-card {
+    .team-img {
+        height: 303px;
+
+        @include media-breakpoint-down(lg) {
+            height: 206px;
+        }
     }
 }

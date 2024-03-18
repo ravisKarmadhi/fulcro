@@ -6,8 +6,8 @@
     }
 
     @include media-breakpoint-down(lg) {
-        padding-left: 22px !important;
-        padding-right: 22px !important;
+        padding-left: 22px;
+        padding-right: 22px;
     }
 }
 
@@ -25,9 +25,19 @@
     margin-left: -25px;
     margin-right: -25px;
 
+    @include media-breakpoint-down(lg) {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
     >* {
         padding-left: 25px;
         padding-right: 25px;
+
+        @include media-breakpoint-down(lg) {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
     }
 }
 
@@ -35,14 +45,40 @@
     margin-left: -15px;
     margin-right: -15px;
 
+    @include media-breakpoint-down(lg) {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
     >* {
         padding-left: 15px;
         padding-right: 15px;
+
+        @include media-breakpoint-down(lg) {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    }
+}
+
+.resrowL {
+    @include media-breakpoint-down(lg) {
+        margin-left: -5px !important;
+        margin-right: -5px !important;
+
+        >* {
+            padding-left: 5px !important;
+            padding-right: 5px !important;
+        }
     }
 }
 
 .top-radius {
     border-radius: $radiusXX $radiusXX 0 0;
+}
+
+.bottom-radius {
+    border-radius: 0 0 $radiusXX $radiusXX;
 }
 
 .w-fit {
@@ -83,6 +119,13 @@
         padding-right: 25px !important;
     }
 
+    .px-p-22 {
+        padding-left: 22px !important;
+        padding-right: 22px !important;
+    }
+
+
+
     .mx-m-0 {
         margin-left: 0 !important;
         margin-right: 0 !important;
@@ -121,4 +164,13 @@
 .truncate {
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.spacing {
+    margin-bottom: -5px;
+}
+
+section {
+    margin-bottom: -5px;
+    z-index: 1;
 }

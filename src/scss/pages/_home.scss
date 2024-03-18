@@ -1,14 +1,37 @@
 .join-team-section {
     .inner-content {
         padding-left: 60px;
+
+        @include media-breakpoint-down(lg) {
+            padding: 55px 36px 40px 24px;
+            padding-left: 20px;
+        }
     }
 
     .inner-image {
         padding-left: 86px;
 
+        @include media-breakpoint-down(lg) {
+            padding-left: 0;
+        }
+
         .join-team-card {
 
             height: 322px;
+
+            @include media-breakpoint-down(lg) {
+                height: 200px;
+            }
         }
     }
 }
+
+// .hero-main {
+//     height: 800px !important;
+
+//     @include media-breakpoint-down(lg) {
+
+//         height: 745px !important;
+//         margin-bottom: -30px;
+//     }
+// }
